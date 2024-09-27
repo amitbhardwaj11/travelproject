@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: hsl(195, 100%, 36%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+.banner {
+    background-image: url("./DALL·E\ 2024-09-27\ 23.20.09\ -\ A\ vibrant\ collage\ of\ five\ popular\ travel\ destinations_\ the\ serene\ beaches\ of\ Bali\,\ Indonesia\ with\ lush\ greenery\ and\ traditional\ temples;\ the\ iconic\ Ei.webp");
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    color: white;
+    background-repeat: no-repeat;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+.about, .contact {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.destination-images img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f75;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .banner {
+        font-size: 2em; /* Smaller font size on medium screens */
+    }
+
+    nav {
+        flex-direction: column; /* Stack navigation links vertically */
+    }
+
+    nav a {
+        padding: 10px; /* Reduce padding */
+    }
+
+    section {
+        margin: 10px; /* Reduce margin on sections */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 200px; /* Reduce height of banner */
+        font-size: 1.5em; /* Further reduce font size */
+    }
+
+    input, textarea {
+        padding: 8px; /* Smaller padding for inputs */
+    }
+
+    button {
+        width: 100%; /* Full width buttons */
+    }
+
+    footer {
+        padding: 5px; /* Smaller footer padding */
+    }
+}
